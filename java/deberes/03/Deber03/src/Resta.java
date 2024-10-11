@@ -10,9 +10,5 @@ public class Resta {
         System.out.println("Introduce el segundo número: ");
         b = sc.nextInt();
         System.out.println("Resultado: " + a + " - " + b + " = " + (a-b));
-
-        int c= 1;
-        boolean valor = true;
-        valor = c == 1 ? true : c== 2 ? false : false;
     }
 }
