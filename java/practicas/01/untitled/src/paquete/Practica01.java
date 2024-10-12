@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class Practica01 {
 
-    // Definición de la enumeración fuera del método main
+    
     enum DiasSemana {
         LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
     }
@@ -29,13 +29,17 @@ public class Practica01 {
         System.out.print("Ingresa tu edad: ");
         int edadE1 = scanner.nextInt();
 
-        System.out.print("Ingresa tu altura (en metros): ");
-        double alturaE1 = scanner.nextDouble();
+        // Ingresar la altura en centímetros
+        System.out.print("Ingresa tu altura (en centímetros): ");
+        double alturaCmE1 = scanner.nextDouble();
+
+        // Convertir la altura a metros
+        double alturaE1 = alturaCmE1 / 100.0;
 
         System.out.print("Ingresa tu peso (en kilogramos): ");
         double pesoE1 = scanner.nextDouble();
 
-        // Inicial del nombre
+        
         char letraNombreE1 = nombreCompletoE1.charAt(0);
 
         // Información del compañero (Mateo)
@@ -51,7 +55,7 @@ public class Practica01 {
         boolean esTallaAltaE1 = alturaE1 > alturaE2;
         boolean esTallaAltaE2 = alturaE2 > alturaE1;
 
-        // Concatenación de la información personal
+        
         String informacionPersonalE1 = letraNombreE1 + "\t" + edadE1 + "\t" + alturaE1 + "\t" + pesoE1 + "\n";
         String informacionPersonalE2 = letraNombreE2 + "$" + edadE2 + "$" + alturaE2 + "$" + pesoE2 + "\r";
 
@@ -91,17 +95,17 @@ public class Practica01 {
         System.out.println("¿Es el más alto? " + esTallaAltaE2);
         System.out.println("¿Es mayor? " + !esMayor);
 
-        // Arreglo de números
+        
         int[] numeros = {1, 2, 3, 4, 5};
         System.out.println("\nEl tercer elemento del arreglo es: " + numeros[2]);
         System.out.println("El quinto elemento del arreglo es: " + numeros[4]);
         System.out.println("El número de elementos del arreglo es: " + numeros.length);
 
-        // Enumeración y feriado
+      
         DiasSemana feriado = DiasSemana.MIERCOLES;
         System.out.println("El feriado es: " + feriado);
 
-        // Cálculo de Math.pow() y Math.sqrt()
+        
         double cuadrado = Math.pow(alturaE1, 2);
         System.out.println("El cuadrado de la altura es: " + cuadrado);
 
@@ -138,7 +142,6 @@ public class Practica01 {
 
 
 
-
 //Conclusiones:
 //El código funciona correctamente, los mensajes se muestran en la consola, las operaciones estan realizadas de forma correcta.
 //Se logró indentificar cuando existe un desvordamiento y por tal motivo la perdida de inbformacion al intentar guardar el valor 255 en una variable de tipo byte.
@@ -150,3 +153,4 @@ public class Practica01 {
 
 //Bibliografía:
 //Diapositivas del docente.
+
