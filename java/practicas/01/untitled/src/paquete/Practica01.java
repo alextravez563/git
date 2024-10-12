@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class Practica01 {
 
-    
+    // Definición de la enumeración fuera del método main
     enum DiasSemana {
         LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
     }
@@ -39,7 +39,7 @@ public class Practica01 {
         System.out.print("Ingresa tu peso (en kilogramos): ");
         double pesoE1 = scanner.nextDouble();
 
-        
+        // Inicial del nombre
         char letraNombreE1 = nombreCompletoE1.charAt(0);
 
         // Información del compañero (Mateo)
@@ -55,7 +55,7 @@ public class Practica01 {
         boolean esTallaAltaE1 = alturaE1 > alturaE2;
         boolean esTallaAltaE2 = alturaE2 > alturaE1;
 
-        
+        // Concatenación de la información personal
         String informacionPersonalE1 = letraNombreE1 + "\t" + edadE1 + "\t" + alturaE1 + "\t" + pesoE1 + "\n";
         String informacionPersonalE2 = letraNombreE2 + "$" + edadE2 + "$" + alturaE2 + "$" + pesoE2 + "\r";
 
@@ -95,17 +95,17 @@ public class Practica01 {
         System.out.println("¿Es el más alto? " + esTallaAltaE2);
         System.out.println("¿Es mayor? " + !esMayor);
 
-        
+        // Arreglo de números
         int[] numeros = {1, 2, 3, 4, 5};
         System.out.println("\nEl tercer elemento del arreglo es: " + numeros[2]);
         System.out.println("El quinto elemento del arreglo es: " + numeros[4]);
         System.out.println("El número de elementos del arreglo es: " + numeros.length);
 
-      
+        // Enumeración y feriado
         DiasSemana feriado = DiasSemana.MIERCOLES;
         System.out.println("El feriado es: " + feriado);
 
-        
+        // Cálculo de Math.pow() y Math.sqrt()
         double cuadrado = Math.pow(alturaE1, 2);
         System.out.println("El cuadrado de la altura es: " + cuadrado);
 
@@ -119,7 +119,8 @@ public class Practica01 {
         // Incremento posterior y previo
         int x = 0;
         int y = 0;
-        System.out.println("\nx es " + x + ", y es " + y);
+        System.out.println("\n" +
+                "x es " + x + ", y es " + y);
         x++;
         System.out.println("x++ resulta en " + x);
         ++x;
