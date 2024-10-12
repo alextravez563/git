@@ -22,7 +22,7 @@ public class Practica01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar datos del estudiante 1 (tú) desde la consola
+        // Solicitar datos del estudiante 1 (alex)
         System.out.print("Ingresa tu nombre completo: ");
         String nombreCompletoE1 = scanner.nextLine();
 
@@ -59,7 +59,6 @@ public class Practica01 {
         String informacionPersonalE1 = letraNombreE1 + "\t" + edadE1 + "\t" + alturaE1 + "\t" + pesoE1 + "\n";
         String informacionPersonalE2 = letraNombreE2 + "$" + edadE2 + "$" + alturaE2 + "$" + pesoE2 + "\r";
 
-        // Operaciones aritméticas
         System.out.println("La suma de las edades es: " + (edadE1 + edadE2));
         System.out.println("La resta de las alturas es: " + (alturaE1 - alturaE2));
         System.out.println("La multiplicación de los pesos es: " + (pesoE1 * pesoE2));
@@ -95,13 +94,13 @@ public class Practica01 {
         System.out.println("¿Es el más alto? " + esTallaAltaE2);
         System.out.println("¿Es mayor? " + !esMayor);
 
-        // Arreglo de números
+        
         int[] numeros = {1, 2, 3, 4, 5};
         System.out.println("\nEl tercer elemento del arreglo es: " + numeros[2]);
         System.out.println("El quinto elemento del arreglo es: " + numeros[4]);
         System.out.println("El número de elementos del arreglo es: " + numeros.length);
 
-        // Enumeración y feriado
+        
         DiasSemana feriado = DiasSemana.MIERCOLES;
         System.out.println("El feriado es: " + feriado);
 
