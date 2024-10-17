@@ -2,7 +2,7 @@
 //Nombre: Alex Travez, Mateo Oviedo
 //Fecha de realizacion: **/10/2024
 //Fecha de entrega: 17/10/2024
-//Resultados: 
+//Resultados:
 //El código permite visualizar la informacion del estudiante 1 y el estudiante 2, calculando su IMC, se obtuvo lo solicitado.
 //Un byte en Java es un tipo de dato de 8 bits que puede representar valores enteros en el rango de -128 a 127.El valor 255 está fuera del rango permitido para un byte. Sin embargo, puedes usar casting para forzar el almacenamiento de valores mayores que 127 en un byte. Esto puede llevar a un fenómeno conocido como "overflow" o "desbordamienton por ese motivo en este caso el -1 representa ese valor.
 //Incremento posterior (x++): El valor de x se incrementa después de ser usado en la expresión. En el primer caso, x++ incrementa x de 0 a 1, pero el valor de y permanece en 0 porque la operación de incremento se realiza después de la asignación. Así que, cuando y = x++, el valor de y es el valor original de x antes de la operación de incremento.
@@ -12,7 +12,7 @@ package paquete;
 
 import java.util.Scanner;
 
-public class Practica01 {
+public class UsoDatos {
 
     // Definición de la enumeración fuera del método main
     enum DiasSemana {
@@ -94,13 +94,13 @@ public class Practica01 {
         System.out.println("¿Es el más alto? " + esTallaAltaE2);
         System.out.println("¿Es mayor? " + !esMayor);
 
-        
+
         int[] numeros = {1, 2, 3, 4, 5};
         System.out.println("\nEl tercer elemento del arreglo es: " + numeros[2]);
         System.out.println("El quinto elemento del arreglo es: " + numeros[4]);
         System.out.println("El número de elementos del arreglo es: " + numeros.length);
 
-        
+
         DiasSemana feriado = DiasSemana.MIERCOLES;
         System.out.println("El feriado es: " + feriado);
 
@@ -139,7 +139,6 @@ public class Practica01 {
         scanner.close();
     }
 }
-
 
 
 //Conclusiones:
