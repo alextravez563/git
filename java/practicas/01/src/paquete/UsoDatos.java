@@ -1,6 +1,6 @@
 //Practica01
 //Nombre: Alex Travez, Mateo Oviedo
-//Fecha de realizacion: **/10/2024
+//Fecha de realizacion: 16/10/2024
 //Fecha de entrega: 17/10/2024
 //Resultados:
 //El código permite visualizar la informacion del estudiante 1 y el estudiante 2, calculando su IMC, se obtuvo lo solicitado.
