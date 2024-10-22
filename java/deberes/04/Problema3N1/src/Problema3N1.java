@@ -49,11 +49,12 @@ public class Problema3N1 {
                 // Si N es impar, N = 3 * N + 1
                 N = 3 * N + 1;
             }
-            System.out.println(N);  // Imprime el valor de N actual
-            contador++;             // Incrementa el contador
+            System.out.println(N); // Imprime el valor de N actual
+            contador++; // Incrementa el contador
         }
 
         // Imprime el número de elementos en la secuencia
         System.out.println("Número de elementos en la secuencia: " + contador);
+        scanner.close();
     }
 }
