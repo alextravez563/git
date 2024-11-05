@@ -31,7 +31,7 @@ public class Contador {
     private int valor;
 
     // Creacion de CONSTRUCTORES-----------------------------------
-    public Contador() {
+    protected Contador() {
         this.valor = 0;
     }
 
@@ -41,18 +41,14 @@ public class Contador {
 
     // Creacion de METODOS------------------------------------------
     public void incrementar() {
-        this.valor = valor + 1;
+        this.valor++;
     }
 
-    public int obtenerValor() {
-        return this.valor;
-    }
-
-    // Creacion de GETTERS--------------------------------- 
+    // Creacion de GETTERS---------------------------------
     // GETTER son como los METODOS (se usa public)
     // tambien se usa el TIPO de la variable que tiene en el atributo, es decir INT
     // GETTER, "devuelve" un valor, entonces RETURN
-    public  int getValor(){
+    public int getValor() {
         return valor;
     }
 
@@ -61,8 +57,8 @@ public class Contador {
     // Tienen argumentos de algún tipo, en este caso, el tipo de INT
     // se usa el THIS
     // SETTER "establece" un valor
-    public void setValor(int valor){
-        this.valor=valor;
+    public void setValor(int valor) {
+        this.valor = valor;
     }
 
     // Metodo MAIN-------------------------------------------------------
@@ -74,21 +70,17 @@ public class Contador {
         // Realizando el conteo
         for (int i = 0; i < 100; i++) {
             if (Math.random() < 0.5) {
-                //Contador Cara sin usar incrementar(), pero que se parezca
-                /*uso el GET para obtener el "valor", sumo mas uno, y todo este
-                 * nuevo resultado se lo actualiza a la variable "valor" usando SET
-                 */
-                contadorCara.setValor(contadorCara.getValor()+1);
-            }else {
-                //Contador Sello sin usar incrementar(), pero que se parezca
-                /* uso GET para obtener el "valor", sumo mas uno, y todo este
-                 * nuevo resultado, se lo actualiza a la variable "valor" usando SET
-                 */
-                contadorSello.setValor(contadorSello.getValor()+1);
+                // Incrementar el contador de caras
+
+                contadorCara.incrementar();
+            } else {
+                // Incrementar el contador de sellos
+
+                contadorSello.incrementar();
             }
         }
-        System.out.println("Se produjeron " + contadorCara.getValor()+ " caras");
-        System.out.println("Se produjeron "+ contadorSello.getValor() + " sellos");
+        System.out.println("Se produjeron " + contadorCara.getValor() + " caras");
+        System.out.println("Se produjeron " + contadorSello.getValor() + " sellos");
     }
 
 }
