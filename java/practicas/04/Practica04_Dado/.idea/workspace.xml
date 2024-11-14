@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d65e9a23-d1ee-4c11-b338-c0dbbff999e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../deberes/05/contador/src/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/07/deber07/src/CuentaBanco1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/07/deber07/src/CuentaBanco2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/07/deber07/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Integrado1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Integrado2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Integrado3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03/Practica03/src/Carro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03/Practica03/src/Carta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03/Practica03/src/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paquete/Jugador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paquete/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica04_Persona/src/paquete/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Baraja.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Carta21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Juego21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Jugador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/JugadorHumano.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Repartidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../deberes/08/deber08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05/practica05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05/practica05/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +63,7 @@
       <updated>1730753036923</updated>
       <workItem from="1730753038152" duration="896000" />
       <workItem from="1731382307311" duration="1041000" />
+      <workItem from="1731602907309" duration="408000" />
     </task>
     <servers />
   </component>
