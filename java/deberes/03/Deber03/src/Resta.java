@@ -4,7 +4,10 @@
    Fecha de entrega:15/05/2024
    Resultados: El código funciona correctamente de acuerdo a las instrucciones que se han dispuesto
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7ebcaf9ef8877a6219744a3f6afecd10f7e747f6
 import java.util.Scanner; // Importa la clase Scanner para leer la entrada del usuario
 
 public class Resta {
