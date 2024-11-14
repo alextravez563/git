@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79f06867-cb67-4a78-b558-d3c3c9d6d084" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../deberes/05/contador/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/07/deber07/src/CuentaBanco1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/07/deber07/src/CuentaBanco2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/07/deber07/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Integrado1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Integrado2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Integrado3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../deberes/08/deber08/src/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/Practica03/src/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/Practica03/src/Carta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/Practica03/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica04_Dado/src/paquete/Jugador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica04_Dado/src/paquete/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/paquete/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Baraja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Carta21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Juego21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Jugador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/JugadorHumano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/Practica05/src/Repartidor.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2oOvZtxMX6ATebmbtBgx4KDRatk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="paquete.Main" />
+      <module name="Practica04_Persona" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="paquete.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79f06867-cb67-4a78-b558-d3c3c9d6d084" name="Changes" comment="" />
+      <created>1730753502662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730753502662</updated>
+      <workItem from="1730753503930" duration="449000" />
+      <workItem from="1730772702650" duration="603000" />
+      <workItem from="1731379979147" duration="196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
