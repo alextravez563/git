@@ -2,6 +2,7 @@
 // Nombre: Alex Travez , Mateo Oviedo
 // Fecha de realización: 13/06/2024
 // Fecha de entrega: 14/06/2024
+//
 
 //Resultados:
 // Se aplicaron los conceptos de herencia y polimorfismo mediante clases y métodos para representar una baraja y el puntaje en el juego de 21. Las clases Carta, Carta21, Jugador, y JugadorHumano permiten el uso de métodos heredados y la especialización de atributos y comportamientos.
