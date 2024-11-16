@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e01f465f-15b2-4547-b2aa-ced9a535fa52" name="Changes" comment="" />
+    <list default="true" id="e01f465f-15b2-4547-b2aa-ced9a535fa52" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../08/deber08/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +34,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Carta",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -76,6 +78,7 @@
       <workItem from="1731181422101" duration="3088000" />
       <workItem from="1731381484198" duration="2668000" />
       <workItem from="1731556644143" duration="2367000" />
+      <workItem from="1731778661800" duration="72000" />
     </task>
     <servers />
   </component>
