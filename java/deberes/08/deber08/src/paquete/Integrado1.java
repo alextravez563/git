@@ -1,9 +1,3 @@
-//Deber08-Integrado1.java
-// Nombre: Alex Travez , Mateo Oviedo
-// Fecha de realizacion:17/11/2024
-// Fecha de entrega: 19/11/2024
-// / Resultados:
-// * Esta clase calcula los costos específicos y devuelve una descripción del integrado.
 
 package paquete;
 
@@ -21,17 +15,5 @@ class Integrado1 extends Integrado {
 
 }
 
-/*
-Conclusiones:
- * La clase `Integrado1` modela un circuito integrado con composición química
- * específica y un cálculo de costos de fabricación y materiales.
- *
- * Recomendaciones:
- * 1. Usar constantes para representar valores fijos como porcentajes y precios.
- * 2. Entender cómo implementar métodos abstractos definidos en la superclase.
- * 3. Asegurarse de que los cálculos sean precisos al trabajar con números decimales.
- * Bibliografía
-//Diapositivas del docente
-*/
 
 

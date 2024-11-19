@@ -1,16 +1,3 @@
-//Deber08-Main.java
-// Nombre: Alex Travez , Mateo Oviedo
-// Fecha de realizacion:17/11/2024
-// Fecha de entrega: 19/11/2024
-/*
-Resultados:
- * El programa permite al usuario registrar 10 pedidos de integrados. Cada pedido
- * puede ser de cualquiera de los 3 tipos. Al final, se muestra el resumen del
- * costo total de cada pedido y el costo acumulado de los 10 pedidos.
- * Este programa ilustra la herencia, el polimorfismo y el uso de ArrayList
- * para gestionar objetos de diferentes subclases.
-*/
-
 package paquete;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -75,18 +62,3 @@ public class Main {
     }
 
 }
-/*
-Conclusiones:
- * Este programa permite al usuario registrar 10 pedidos de integrados, calculando
- * automáticamente el costo total para cada tipo y proporcionando un resumen detallado.
- * Se ilustra el uso de herencia, polimorfismo y ArrayList para manejar objetos de
- * diferentes subclases.
- *
- * Recomendaciones:
- * 1. Validar las entradas del usuario para evitar errores al elegir un tipo de integrado.
- * 2. Explorar cómo persistir los datos de los pedidos en un archivo o base de datos.
- * 3. Aprender sobre el uso de interfaces gráficas para mejorar la interacción.
- *
-* Bibliografía
-//Diapositivas del docente
-*/

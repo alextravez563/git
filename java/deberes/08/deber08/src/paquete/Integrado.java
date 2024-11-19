@@ -68,4 +68,9 @@ public abstract class Integrado {
  * Del mismo modo, tambien es necesario que se conozca la diferencia entre los
  * metodos abstractos y no abstractos, la herencia, la sobre escritura y el uso de ArrayList
  * Bibliografía
-//Diapositivas del docente */
+//Diapositivas del docente
+//bibliografia de la clase
+//https://www.geeksforgeeks.org/arraylist-in-java/
+//https://www.w3schools.com/java/java_arraylist.asp
+//https://www.javatpoint.com/java-arraylist
+*/

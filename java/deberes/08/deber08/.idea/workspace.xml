@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72e557e5-761d-4be0-9052-d88a275286ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../07/deber07/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber08.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paquete/Integrado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paquete/Integrado1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paquete/Integrado2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paquete/Integrado3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paquete/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07/deber07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07/deber07/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/paquete/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +27,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alextravez56"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/alextravez563/git.git",
+    "accountId": "d961f0b9-86bc-4b39-987b-7b33c4ca2b4e"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2owRbAd3iy1gxCTlw3ynhhkl5y1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731778724106</updated>
       <workItem from="1731778725448" duration="2756000" />
+      <workItem from="1731971818225" duration="1779000" />
     </task>
     <servers />
   </component>
