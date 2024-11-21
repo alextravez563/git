@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72e557e5-761d-4be0-9052-d88a275286ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/paquete/Integrado3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Integrado3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/paquete/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/paquete/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="72e557e5-761d-4be0-9052-d88a275286ce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731778724106</updated>
       <workItem from="1731778725448" duration="2756000" />
-      <workItem from="1731971818225" duration="1779000" />
+      <workItem from="1731971818225" duration="3177000" />
     </task>
     <servers />
   </component>

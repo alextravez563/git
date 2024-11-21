@@ -1,27 +1,20 @@
-/*Proyecto 01 - Carta.java
-        Alex Travez - Mateo Oviedo
-        Fecha de realización: 18/11/2024
-        Fecha de entrega: 20/11/2024
-        */
-//RESULTADOS:
-
 import util.ConsolaStyles;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // Clase abstracta que representa una Carta genérica en un juego de cartas.
-// Esta clase no se puede instanciar directamente y sirve como base para otros tipos de cartas.
+// Esta clase se utiliza como base para otros tipos de cartas (e.g., cartas de póker, naipes españoles).
 public abstract class Carta {
-    protected String valor; // Valor de la carta, como "A", "K", "2", etc.
-    protected CartaFamilia familia; // Familia o palo de la carta, como corazones o picas.
-    private List<String> patron;
+    protected String valor; // Valor de la carta (e.g., "A", "K", "2", etc.).
+    protected CartaFamilia familia; // Familia o palo de la carta (e.g., corazones, tréboles, etc.).
+    private List<String> patron; // Representación visual de la carta, en forma de patrón.
 
-    // Constructor para inicializar una carta con un valor y una familia.
+    // Constructor que inicializa los atributos de la carta.
     public Carta(String valor, CartaFamilia familia) {
-        this.valor = valor;
-        this.familia = familia;
-        this.patron = generarPatron(valor);
+        this.valor = valor; // Asigna el valor de la carta.
+        this.familia = familia; // Asigna la familia de la carta.
+        this.patron = generarPatron(valor); // Genera un patrón visual según el valor.
     }
 
     // Getter para obtener el valor de la carta.
@@ -29,159 +22,151 @@ public abstract class Carta {
         return valor;
     }
 
-    // Getter para obtener la familia o palo de la carta.
+    // Getter para obtener la familia de la carta.
     public CartaFamilia getFamilia() {
         return familia;
     }
 
-    // Sobrescribe el método toString para mostrar la carta en formato legible.
+    // Sobrescribe el método toString para devolver una descripción simple de la carta.
     @Override
     public String toString() {
         return valor + " de " + familia.getNombre() + " " + familia.getSimbolo();
     }
 
+    // Método privado que genera un patrón visual basado en el valor de la carta.
     private List<String> generarPatron(String valor) {
-        List<String> patron = new ArrayList<>();
+        List<String> patron = new ArrayList<>(); // Lista que almacena el patrón.
+        // Según el valor, agrega las líneas que forman el patrón de la carta.
         switch (valor) {
-            case "A":
+            case "A": // Patrón para el As.
                 patron.add("         ");
                 patron.add("    *    ");
                 patron.add("         ");
                 patron.add("         ");
                 break;
-            case "2":
+            case "2": // Patrón para el número 2.
                 patron.add("    *    ");
                 patron.add("         ");
                 patron.add("         ");
                 patron.add("    *    ");
                 break;
-            case "3":
+            case "3": // Patrón para el número 3.
                 patron.add("    *    ");
                 patron.add("    *    ");
                 patron.add("    *    ");
                 patron.add("         ");
                 break;
-            case "4":
+            case "4": // Patrón para el número 4.
                 patron.add("  *   *  ");
                 patron.add("         ");
                 patron.add("         ");
                 patron.add("  *   *  ");
                 break;
-            case "5":
+            case "5": // Patrón para el número 5.
                 patron.add("  *   *  ");
                 patron.add("    *    ");
                 patron.add("         ");
                 patron.add("  *   *  ");
                 break;
-            case "6":
+            case "6": // Patrón para el número 6.
                 patron.add("  *   *  ");
                 patron.add("         ");
                 patron.add("  *   *  ");
                 patron.add("  *   *  ");
                 break;
-            case "7":
+            case "7": // Patrón para el número 7.
                 patron.add("  *   *  ");
                 patron.add("    *    ");
                 patron.add("  *   *  ");
                 patron.add("  *   *  ");
                 break;
-            case "8":
+            case "8": // Patrón para el número 8.
                 patron.add("  *   *  ");
                 patron.add("    *    ");
                 patron.add("  * * *  ");
                 patron.add("  *   *  ");
                 break;
-            case "9":
+            case "9": // Patrón para el número 9.
                 patron.add("  *   *  ");
                 patron.add("  * * *  ");
                 patron.add("  *   *  ");
                 patron.add("  *   *  ");
                 break;
-            case "10", "J", "Q", "K":
+            case "10", "J", "Q", "K": // Patrón para 10, Jota, Reina, Rey (similares).
                 patron.add("  *   *  ");
                 patron.add("  * * *  ");
                 patron.add("  * * *  ");
                 patron.add("  *   *  ");
                 break;
-            default:
+            default: // Patrón por defecto (vacío).
                 patron.add("         ");
                 patron.add("         ");
                 patron.add("         ");
                 patron.add("         ");
                 break;
         }
-        return patron;
+        return patron; // Retorna la lista con el patrón generado.
     }
 
-    // Método para generar una representación visual de una carta.
-    // Incluye su índice y su valor visual en el mazo.
+    // Método que genera una representación visual de la carta.
     public String mostrarCarta(int index, boolean withSymbol) {
 
+        // Si se solicita mostrar con símbolo, se regenera el patrón para el As como ejemplo.
         if (withSymbol) {
             patron = generarPatron("A");
         }
 
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(); // Usado para construir la representación.
         String simbolo = withSymbol ? familia.getSimbolo() : ConsolaStyles.getTextoEstilado(String.valueOf(familia.getNombre().charAt(0)), familia.getColor());
-        int fixedHeight = 6; // Fixed height for the card's body
+        int fixedHeight = 6; // Altura fija para el cuerpo de la carta.
 
+        // Parte superior de la carta.
         sb.append("┌─────────┐\n");
-        sb.append(String.format("│%2s       │\n", valor));
+        sb.append(String.format("│%2s       │\n", valor)); // Valor en la esquina superior izquierda.
         sb.append("│         │\n");
 
-        int patternStart = (fixedHeight - patron.size()) / 2;
+        // Parte central: patrón visual.
+        int patternStart = (fixedHeight - patron.size()) / 2; // Centra el patrón dentro de la altura fija.
         for (int i = 0; i < fixedHeight; i++) {
             if (i >= patternStart && i < patternStart + patron.size()) {
-                String linea = patron.get(i - patternStart);
+                String linea = patron.get(i - patternStart); // Obtiene la línea correspondiente del patrón.
                 sb.append("│");
                 for (char c : linea.toCharArray()) {
-                    sb.append(c == '*' ? simbolo : ' ');
+                    sb.append(c == '*' ? simbolo : ' '); // Sustituye '*' por el símbolo, si corresponde.
                 }
                 sb.append("│\n");
             } else {
-                sb.append("│         │\n");
+                sb.append("│         │\n"); // Espacios vacíos para las líneas restantes.
             }
         }
 
-        sb.append(String.format("│       %2s│\n", valor));
+        // Parte inferior de la carta.
+        sb.append(String.format("│       %2s│\n", valor)); // Valor en la esquina inferior derecha.
         sb.append("└─────────┘\n");
-        sb.append(String.format("    [%1d]    ", index));
+        sb.append(String.format("    [%1d]    ", index)); // Muestra el índice de la carta.
 
         return sb.toString(); // Retorna la representación completa de la carta.
     }
 
-    // Método sobrecargado para mostrar múltiples cartas con un número de líneas configurable.
+    // Método estático para mostrar varias cartas en una sola línea.
     public static void mostrarCartasEnLinea(List<Carta> cartas, int lines, boolean withSymbol) {
         StringBuilder[] lineas = new StringBuilder[lines];
         for (int i = 0; i < lines; i++) {
             lineas[i] = new StringBuilder(); // Inicializa cada línea del diseño visual.
         }
 
-        // Recorre cada carta y genera su representación visual.
+        // Itera sobre cada carta y construye su representación.
         for (int i = 0; i < cartas.size(); i++) {
             Carta carta = cartas.get(i);
             String[] cartaLineas = carta.mostrarCarta(i, withSymbol).split("\n"); // Divide la carta en líneas.
             for (int j = 0; j < lines; j++) {
-                lineas[j].append(cartaLineas[j]).append("  "); // Combina las cartas horizontalmente.
+                lineas[j].append(cartaLineas[j]).append("  "); // Une las cartas horizontalmente.
             }
         }
 
-        // Imprime todas las líneas que forman las cartas.
+        // Imprime todas las líneas generadas.
         for (StringBuilder linea : lineas) {
             System.out.println(linea.toString());
         }
     }
 }
-
-/*
- Conclusiones
-1-La abstracción de la clase Carta permite una clara organización del código, facilitando la creación de diferentes tipos de cartas y familias, lo cual es esencial para el diseño de juegos de cartas complejos.
-2-El método mostrarCarta proporciona una representación visual detallada y creativa, haciendo más amigable la interacción con el programa, especialmente útil en juegos por consola.
-3-El uso de la clase StringBuilder optimiza la manipulación de cadenas, mejorando el rendimiento en comparación con la concatenación directa mediante operadores.
-4-El código demuestra un enfoque modular y reutilizable, separando responsabilidades, lo cual es crucial para mantener la escalabilidad y el mantenimiento del proyecto.
-Recomendaciones
-1-Implementar un método dinámico para asignar el número de símbolos en la carta (valorNumerico) basado en el valor real (por ejemplo, "2" muestra dos símbolos), para hacer la representación más precisa y realista.
-2-Incorporar validaciones adicionales en el constructor de la clase Carta para verificar que los valores y las familias proporcionados sean válidos, evitando posibles inconsistencias o errores.
-3-Documentar la clase Carta y sus métodos con comentarios en formato Javadoc para facilitar la comprensión del código a otros desarrolladores.
-4-Añadir pruebas unitarias que validen el comportamiento de los métodos, como mostrarCarta y mostrarCartasEnLinea, para garantizar la funcionalidad y detectar errores durante futuros cambios.
- */
