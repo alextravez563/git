@@ -16,7 +16,6 @@ public abstract class Carta {
     protected String valor; // Valor de la carta, como "A", "K", "2", etc.
     protected CartaFamilia familia; // Familia o palo de la carta, como corazones o picas.
     private List<String> patron;
-    private EstiloDeJuego estiloDeJuego;
 
     // Constructor para inicializar una carta con un valor y una familia.
     public Carta(String valor, CartaFamilia familia) {

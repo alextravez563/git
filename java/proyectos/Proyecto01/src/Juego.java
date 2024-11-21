@@ -5,15 +5,10 @@ import util.ConsolaStyles;
 
 // Clase que representa un juego entre dos jugadores utilizando cartas.
 public class Juego {
-    private List<CartaJuego> baraja; // Baraja completa de cartas.
-    private Jugador jugador1; // Primer jugador.
-    private Jugador jugador2; // Segundo jugador.
-    private EstiloDeJuego estiloDeJuego;
-
-    // Constructor que inicializa el juego, crea la baraja y asigna jugadores.
-    public Juego(String nombreJugador1, String nombreJugador2) {
-        this(nombreJugador1, nombreJugador2, EstiloDeJuego.GRAFICO_SIMBOLO_MEDIO);
-    }
+    private final List<CartaJuego> baraja; // Baraja completa de cartas.
+    private final Jugador jugador1; // Primer jugador.
+    private final Jugador jugador2; // Segundo jugador.
+    private final EstiloDeJuego estiloDeJuego;
 
     public Juego(String nombreJugador1, String nombreJugador2, EstiloDeJuego estiloDeJuego) {
         this.baraja = CartaJuego.crearBaraja(); // Crea una baraja completa.
@@ -26,8 +21,8 @@ public class Juego {
     // Método que reparte 5 cartas a cada jugador.
     public void repartirCartas() {
         for (int i = 0; i < 5; i++) {
-            jugador1.recibirCarta(baraja.remove(0)); // Da una carta al jugador 1.
-            jugador2.recibirCarta(baraja.remove(0)); // Da una carta al jugador 2.
+            jugador1.recibirCarta(baraja.removeFirst()); // Da una carta al jugador 1.
+            jugador2.recibirCarta(baraja.removeFirst()); // Da una carta al jugador 2.
         }
     }
 
@@ -108,17 +103,17 @@ public class Juego {
     }
 
     // Método para obtener un número válido dentro de un rango específico.
-    private int obtenerNumeroValido(Scanner scanner, String mensaje, int min, int max) {
+    private int obtenerNumeroValido(Scanner scanner, String mensaje) {
         int numero = -1;
-        while (numero < min || numero > max) {
+        while (numero < 0 || numero > 4) {
             System.out.println(mensaje);
             if (scanner.hasNextInt()) {
                 numero = scanner.nextInt();
-                if (numero < min || numero > max) {
-                    System.out.println("Número inválido. Por favor, ingresa un número entre " + min + " y " + max + ".");
+                if (numero < 0 || numero > 4) {
+                    System.out.println("Número inválido. Por favor, ingresa un número entre " + 0 + " y " + 4 + ".");
                 }
             } else {
-                System.out.println("Entrada inválida. Por favor, ingresa un número entre " + min + " y " + max + ".");
+                System.out.println("Entrada inválida. Por favor, ingresa un número entre " + 0 + " y " + 4 + ".");
                 scanner.next(); // Clear the invalid input
             }
         }
@@ -127,17 +122,17 @@ public class Juego {
 
     // Permite a un jugador cambiar cartas.
     private void realizarCambio(Jugador jugador, Scanner scanner) {
-        int numCambios = obtenerNumeroValido(scanner, jugador.getNombre() + ", ¿Cuántas cartas deseas cambiar? (0-4)", 0, 4);
+        int numCambios = obtenerNumeroValido(scanner, jugador.getNombre() + ", ¿Cuántas cartas deseas cambiar? (0-4)");
 
         List<Integer> indices = new ArrayList<>();
         for (int i = 0; i < numCambios; i++) {
-            int indice = obtenerNumeroValido(scanner, "[" + (i + 1) + "/" + numCambios + "] Ingresa el índice de la carta a cambiar (0-4)", 0, 4);
+            int indice = obtenerNumeroValido(scanner, "[" + (i + 1) + "/" + numCambios + "] Ingresa el índice de la carta a cambiar (0-4)");
             indices.add(indice);
         }
 
         List<Carta> nuevasCartas = new ArrayList<>();
         for (int i = 0; i < numCambios; i++) {
-            nuevasCartas.add(baraja.remove(0));
+            nuevasCartas.add(baraja.removeFirst());
         }
         jugador.cambiarCartas(nuevasCartas, indices);
         jugador.mostrarCartas(estiloDeJuego);

@@ -6,8 +6,8 @@ import util.ConsolaStyles;
 
 // Clase que representa a un jugador en el juego.
 public class Jugador {
-    private String nombre; // Nombre del jugador.
-    private List<Carta> mano; // Lista de cartas en la mano del jugador.
+    private final String nombre; // Nombre del jugador.
+    private final List<Carta> mano; // Lista de cartas en la mano del jugador.
     private boolean usoCartaTrampa; // Indica si el jugador ya usó su carta trampa.
 
     // Constructor que inicializa al jugador con un nombre, una mano vacía y sin uso de carta trampa.
