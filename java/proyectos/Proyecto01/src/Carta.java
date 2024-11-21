@@ -5,6 +5,9 @@
         */
 //RESULTADOS:
 
+import util.ConsolaStyles;
+
+import java.util.ArrayList;
 import java.util.List;
 
 // Clase abstracta que representa una Carta genérica en un juego de cartas.
@@ -12,11 +15,14 @@ import java.util.List;
 public abstract class Carta {
     protected String valor; // Valor de la carta, como "A", "K", "2", etc.
     protected CartaFamilia familia; // Familia o palo de la carta, como corazones o picas.
+    private List<String> patron;
+    private EstiloDeJuego estiloDeJuego;
 
     // Constructor para inicializar una carta con un valor y una familia.
     public Carta(String valor, CartaFamilia familia) {
         this.valor = valor;
         this.familia = familia;
+        this.patron = generarPatron(valor);
     }
 
     // Getter para obtener el valor de la carta.
@@ -35,39 +41,118 @@ public abstract class Carta {
         return valor + " de " + familia.getNombre() + " " + familia.getSimbolo();
     }
 
+    private List<String> generarPatron(String valor) {
+        List<String> patron = new ArrayList<>();
+        switch (valor) {
+            case "A":
+                patron.add("         ");
+                patron.add("    *    ");
+                patron.add("         ");
+                patron.add("         ");
+                break;
+            case "2":
+                patron.add("    *    ");
+                patron.add("         ");
+                patron.add("         ");
+                patron.add("    *    ");
+                break;
+            case "3":
+                patron.add("    *    ");
+                patron.add("    *    ");
+                patron.add("    *    ");
+                patron.add("         ");
+                break;
+            case "4":
+                patron.add("  *   *  ");
+                patron.add("         ");
+                patron.add("         ");
+                patron.add("  *   *  ");
+                break;
+            case "5":
+                patron.add("  *   *  ");
+                patron.add("    *    ");
+                patron.add("         ");
+                patron.add("  *   *  ");
+                break;
+            case "6":
+                patron.add("  *   *  ");
+                patron.add("         ");
+                patron.add("  *   *  ");
+                patron.add("  *   *  ");
+                break;
+            case "7":
+                patron.add("  *   *  ");
+                patron.add("    *    ");
+                patron.add("  *   *  ");
+                patron.add("  *   *  ");
+                break;
+            case "8":
+                patron.add("  *   *  ");
+                patron.add("    *    ");
+                patron.add("  * * *  ");
+                patron.add("  *   *  ");
+                break;
+            case "9":
+                patron.add("  *   *  ");
+                patron.add("  * * *  ");
+                patron.add("  *   *  ");
+                patron.add("  *   *  ");
+                break;
+            case "10", "J", "Q", "K":
+                patron.add("  *   *  ");
+                patron.add("  * * *  ");
+                patron.add("  * * *  ");
+                patron.add("  *   *  ");
+                break;
+            default:
+                patron.add("         ");
+                patron.add("         ");
+                patron.add("         ");
+                patron.add("         ");
+                break;
+        }
+        return patron;
+    }
+
     // Método para generar una representación visual de una carta.
     // Incluye su índice y su valor visual en el mazo.
-    public String mostrarCarta(int index) {
-        StringBuilder sb = new StringBuilder();
-        String simbolo = familia.getSimbolo(); // Obtiene el símbolo del palo.
-        int valorNumerico = 1; // Representa una cantidad fija para ajustar diseño visual.
+    public String mostrarCarta(int index, boolean withSymbol) {
 
-        // Construcción del diseño de la carta usando caracteres ASCII.
+        if (withSymbol) {
+            patron = generarPatron("A");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        String simbolo = withSymbol ? familia.getSimbolo() : ConsolaStyles.getTextoEstilado(String.valueOf(familia.getNombre().charAt(0)), familia.getColor());
+        int fixedHeight = 6; // Fixed height for the card's body
+
         sb.append("┌─────────┐\n");
-        sb.append(String.format("│%2s       │\n", valor)); // Escribe el valor en la esquina superior izquierda.
-        for (int i = 0; i < 3; i++) {
-            sb.append("│         │\n"); // Espacios internos vacíos.
+        sb.append(String.format("│%2s       │\n", valor));
+        sb.append("│         │\n");
+
+        int patternStart = (fixedHeight - patron.size()) / 2;
+        for (int i = 0; i < fixedHeight; i++) {
+            if (i >= patternStart && i < patternStart + patron.size()) {
+                String linea = patron.get(i - patternStart);
+                sb.append("│");
+                for (char c : linea.toCharArray()) {
+                    sb.append(c == '*' ? simbolo : ' ');
+                }
+                sb.append("│\n");
+            } else {
+                sb.append("│         │\n");
+            }
         }
-        for (int i = 0; i < valorNumerico; i++) {
-            sb.append(String.format("│    %s    │\n", simbolo)); // Simbolo central de la carta.
-        }
-        for (int i = 0; i < 3; i++) {
-            sb.append("│         │\n"); // Más espacios internos vacíos.
-        }
-        sb.append(String.format("│       %2s│\n", valor)); // Escribe el valor en la esquina inferior derecha.
+
+        sb.append(String.format("│       %2s│\n", valor));
         sb.append("└─────────┘\n");
-        sb.append(String.format("    [%1d]    ", index)); // Índice para referencia externa.
+        sb.append(String.format("    [%1d]    ", index));
 
         return sb.toString(); // Retorna la representación completa de la carta.
     }
 
-    // Método para mostrar múltiples cartas en una sola línea.
-    public static void mostrarCartasEnLinea(List<Carta> cartas) {
-        mostrarCartasEnLinea(cartas, 12); // Llama a la sobrecarga del método con 12 líneas como predeterminado.
-    }
-
     // Método sobrecargado para mostrar múltiples cartas con un número de líneas configurable.
-    public static void mostrarCartasEnLinea(List<Carta> cartas, int lines) {
+    public static void mostrarCartasEnLinea(List<Carta> cartas, int lines, boolean withSymbol) {
         StringBuilder[] lineas = new StringBuilder[lines];
         for (int i = 0; i < lines; i++) {
             lineas[i] = new StringBuilder(); // Inicializa cada línea del diseño visual.
@@ -76,7 +161,7 @@ public abstract class Carta {
         // Recorre cada carta y genera su representación visual.
         for (int i = 0; i < cartas.size(); i++) {
             Carta carta = cartas.get(i);
-            String[] cartaLineas = carta.mostrarCarta(i).split("\n"); // Divide la carta en líneas.
+            String[] cartaLineas = carta.mostrarCarta(i, withSymbol).split("\n"); // Divide la carta en líneas.
             for (int j = 0; j < lines; j++) {
                 lineas[j].append(cartaLineas[j]).append("  "); // Combina las cartas horizontalmente.
             }

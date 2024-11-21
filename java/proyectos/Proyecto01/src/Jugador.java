@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
+
 import util.ConsolaStyles;
 
 // Clase que representa a un jugador en el juego.
@@ -40,13 +41,23 @@ public class Jugador {
     }
 
     // Muestra las cartas del jugador en línea.
-    public void mostrarCartas() {
-        Carta.mostrarCartasEnLinea(this.mano);
+    public void mostrarCartas(EstiloDeJuego estiloDeJuego) {
+        mostrarCartas(estiloDeJuego, 12);
     }
 
-    // Muestra las cartas del jugador con un número específico de líneas.
-    public void mostrarCartas(int lines) {
-        Carta.mostrarCartasEnLinea(this.mano, lines);
+    public void mostrarCartas(EstiloDeJuego estiloDeJuego, int lines) {
+        switch (estiloDeJuego) {
+            case LISTA, TEXTO:
+                System.out.println(getManoString());
+                break;
+            case GRAFICO_SIMBOLO_MEDIO:
+                Carta.mostrarCartasEnLinea(this.mano, lines, true);
+                break;
+            default:
+                Carta.mostrarCartasEnLinea(this.mano, lines, false);
+                break;
+        }
+
     }
 
     // Método para recibir una carta y añadirla a la mano.

@@ -27,24 +27,6 @@ public class ConsolaStyles {
     public static final String PURPLE_BACKGROUND = "\033[45m";
     public static final String CYAN_BACKGROUND = "\033[46m";
 
-    public static void print(String text, String style) {
-        System.out.println(style + text + RESET);
-    }
-
-    public static void print(String text, String style, String color) {
-        System.out.println(style + color + text + RESET);
-    }
-
-    public static void print(String text, String style, String color, String background) {
-        System.out.println(style + color + background + text + RESET);
-    }
-
-    public static void printCharts(int i, char c) {
-        for (int j = 0; j < i; j++) {
-            System.out.print(c);
-        }
-    }
-
     public static void printTitle(String title) {
         printTitle('-', title);
     }
@@ -61,6 +43,9 @@ public class ConsolaStyles {
 
     }
 
+    public static String getTextoEstilado(String text, String color) {
+        return ConsolaStyles.BOLD + color + text + ConsolaStyles.RESET;
+    }
 
     public static void main(String[] args) {
         System.out.println(BOLD + "NEGRILLA" + RESET);
