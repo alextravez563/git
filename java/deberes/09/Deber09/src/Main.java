@@ -154,7 +154,7 @@ public class Main {
         }
 
         // Mensaje de despedida al salir del programa
-        System.out.println("Gracias por usar la calculadora. ¡Hasta luego!");
+        System.out.println("Gracias por usar la calculadora realizada por Alex Travez y Mateo Oviedo. ¡Hasta luego!");
         // Cerrar el scanner
         scanner.close();
     }

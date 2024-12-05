@@ -1,9 +1,14 @@
 //Deber09
 // Nombre: Alex Travez , Mateo Oviedo
-// Fecha de realizacion:31/11/2024
+// Fecha de realizacion:2/12/2024
 // Fecha de entrega: 5/12/2024
 //Resultados: El presente programa es una calculadora, la cual atrapa los posibles
-//  errores que el usuario pueda ingresar mediante el uso de try-catch
+//  errores que el usuario pueda ingresar mediante el uso de try-catch.
+//  Y al momento de ejecutar el codigo proporciona un mensaje al usuario para que identifique el tipo de error.
+//  que esta cometiendo para que los re-ingrese nuevamente , por ejemplo si el usuario ingresa un numero decimal en vez de un numero entero el programa le proporciona un mensaje de error.
+// y le va a pedir que ingrese un numero entero valido para que funcione correctamente.
+// Otro error que el programa atrapa es cuando el usuario ingresa un numero mayor a 20000 en valor absoluto, el programa le proporciona un mensaje de error y le pide que ingrese un numero menor a 20000.Por lo cual el programa esta diseñado para capturar esos posibles errores de entrada de datos y proporcionar un mensaje al usuario para que identifique el tipo de error que esta cometiendo para que los re-ingrese nuevamente.
+
 
 
 // Importamos las clases necesarias para manejar entrada de usuario y excepciones
