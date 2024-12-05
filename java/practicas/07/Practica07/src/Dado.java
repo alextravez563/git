@@ -1,6 +1,6 @@
 //Practica07
 // Nombre: Alex Travez , Mateo Oviedo
-// Fecha de realizacion:31/11/2024
+// Fecha de realizacion:4/12/2024
 // Fecha de entrega: 5/12/2024
 //Resultados:
 //1) Caso 1: Ingresar un nombre vacío
