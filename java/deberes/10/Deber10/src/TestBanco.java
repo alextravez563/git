@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 /*
+//Deber10
+// Nombre: Alex Travez , Mateo Oviedo
+// Fecha de realizacion:9/12/2024
+// Fecha de entrega: 10/12/2024
      ===========================
      Resultados obtenidos:
      ===========================
