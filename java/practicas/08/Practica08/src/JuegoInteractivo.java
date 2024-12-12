@@ -27,6 +27,11 @@ import java.util.Scanner;
  * 3. Considerar una interfaz gráfica para mejorar la interacción con el usuario.
  * 4. Probar exhaustivamente el programa para garantizar su robustez.
  * 5. Documentar claramente cada clase y método para facilitar el mantenimiento del código.
+ *
+ * Bibliografia:
+ * 1 Baeldung. (s.f.). Java Serialization. Recuperado de https://www.baeldung.com/java-serialization
+ * 2 Bloch, J. (2018). Effective Java (3ra ed.). Addison-Wesley Professional.
+ * 3 Mejía, D. (s.f.). ITID433 Programación Avanzada: Práctica 08 Serialización. Facultad de Ingeniería Eléctrica y Electrónica.
  */
 
 
