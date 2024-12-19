@@ -5,7 +5,7 @@ import java.util.Scanner;
  // Nombre: Alex Travez , Mateo Oviedo
  // Fecha de realizacion:18/12/2024
  // Fecha de entrega: 19/12/2024
- 
+
  */
 // --- Resultados esperados ---
 /*
