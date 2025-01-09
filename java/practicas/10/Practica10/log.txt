@@ -1,0 +1,5 @@
+Perro registrado: Peluche
+La puerta está abierta.
+Puerta abierta con ladrido de Peluche
+Puerta abierta con control remoto.
+Puerta cerrada automáticamente.

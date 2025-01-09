@@ -5,15 +5,8 @@ import java.util.Scanner;
  // Nombre: Alex Travez , Mateo Oviedo
  // Fecha de realizacion:18/12/2024
  // Fecha de entrega: 19/12/2024
+ */
 
- */
-// --- Resultados esperados ---
-/*
- * Resultado 1: Se puede agregar un libro nuevo con su autor, incluso si el autor no existía previamente.
- * Resultado 2: El sistema muestra los mensajes adecuados cuando se realiza un préstamo o una devolución.
- * Resultado 3: El programa gestiona errores comunes, como libros o autores no encontrados,
- *              mostrando mensajes informativos al usuario.
- */
 public class Main {
     public static void main(String[] args) {
         // Se instancia una nueva biblioteca que gestionará autores, libros y préstamos.
@@ -157,4 +150,8 @@ public class Main {
      * 3. Incorporar persistencia de datos (por ejemplo, con un archivo o base de datos)
      *    para que la información no se pierda al cerrar el programa.
      */
+
+
 }
+
+
