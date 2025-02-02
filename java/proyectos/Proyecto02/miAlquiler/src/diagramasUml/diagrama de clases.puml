@@ -1,0 +1,99 @@
+@startuml
+!define RECTANGLE class
+
+skinparam defaultTextAlignment center
+skinparam classBackgroundColor #F0F8FF
+skinparam classBorderColor #000080
+skinparam classArrowColor #000080
+skinparam classFontColor #000000
+skinparam arrowColor #000080
+
+class Cliente {
+    - String nombre
+    - String identificacion
+    - String contacto
+    + String getNombre()
+    + void setNombre(String nombre)
+    + String getIdentificacion()
+    + void setIdentificacion(String identificacion)
+    + String getContacto()
+    + void setContacto(String contacto)
+}
+
+class Vehiculo {
+    - String marca
+    - String modelo
+    - String tipo
+    - boolean disponible
+    + String getMarca()
+    + void setMarca(String marca)
+    + String getModelo()
+    + void setModelo(String modelo)
+    + String getTipo()
+    + void setTipo(String tipo)
+    + boolean isDisponible()
+    + void setDisponible(boolean disponible)
+}
+
+class Reserva {
+    - Cliente cliente
+    - Vehiculo vehiculo
+    - Date fechaInicio
+    - Date fechaFin
+    + Cliente getCliente()
+    + void setCliente(Cliente cliente)
+    + Vehiculo getVehiculo()
+    + void setVehiculo(Vehiculo vehiculo)
+    + Date getFechaInicio()
+    + void setFechaInicio(Date fechaInicio)
+    + Date getFechaFin()
+    + void setFechaFin(Date fechaFin)
+}
+
+class AgenciaAlquiler {
+    - List<Cliente> clientes
+    - List<Vehiculo> vehiculos
+    - List<Reserva> reservas
+    + void agregarCliente(Cliente cliente)
+    + void agregarVehiculo(Vehiculo vehiculo)
+    + void realizarReserva(Reserva reserva)
+    + List<Cliente> getClientes()
+    + List<Vehiculo> getVehiculos()
+    + List<Reserva> getReservas()
+}
+
+class DatosInvalidosException {
+    + DatosInvalidosException(String mensaje)
+}
+
+class VehiculoOcupadoException {
+    + VehiculoOcupadoException(String mensaje)
+}
+
+Cliente "1" -- "1" Reserva : "realiza"
+Vehiculo "1" -- "1" Reserva : "es reservado"
+AgenciaAlquiler "1" -- "*" Cliente : "gestiona"
+AgenciaAlquiler "1" -- "*" Vehiculo : "gestiona"
+AgenciaAlquiler "1" -- "*" Reserva : "gestiona"
+DatosInvalidosException --|> Exception : "extiende"
+VehiculoOcupadoException --|> Exception : "extiende"
+
+note right of Cliente
+  <b>Cliente</b>:
+  Representa a un usuario
+  que realiza reservas.
+end note
+
+note left of Vehiculo
+  <b>Vehículo</b>:
+  Representa un automóvil,
+  camioneta o motocicleta.
+end note
+
+note bottom of Reserva
+  <b>Reserva</b>:
+  Asocia un cliente con un
+  vehículo en un período.
+end note
+
+@enduml

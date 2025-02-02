@@ -1,0 +1,36 @@
+@startuml
+!define RECTANGLE sequence
+
+skinparam defaultTextAlignment center
+skinparam participantBackgroundColor #E6E6FA
+skinparam participantBorderColor #000080
+skinparam actorBackgroundColor #FFD700
+skinparam actorBorderColor #000000
+skinparam sequenceArrowColor #000080
+
+actor "Usuario" as Usuario <<(U,#FFD700)>>
+participant "AgenciaAlquiler" as Agencia
+participant "Cliente" as Cliente
+participant "Vehiculo" as Vehiculo
+participant "Reserva" as Reserva
+
+Usuario -> Agencia : "1. Solicitar reserva"
+Agencia -> Cliente : "2. Verificar cliente"
+Agencia -> Vehiculo : "3. Verificar disponibilidad"
+Agencia -> Reserva : "4. Crear reserva"
+Agencia -> Vehiculo : "5. Marcar como no disponible"
+Agencia --> Usuario : "6. Reserva exitosa"
+
+note right of Usuario
+  <b>Usuario</b>:
+  Interactúa con el sistema
+  para realizar una reserva.
+end note
+
+note left of Agencia
+  <b>AgenciaAlquiler</b>:
+  Gestiona el proceso de
+  reserva y verificación.
+end note
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+[*] --> Disponible
+Disponible --> Ocupado : Reserva realizada
+Ocupado --> Disponible : Reserva cancelada
+Ocupado --> Mantenimiento : Vehículo dañado
+Mantenimiento --> Disponible : Reparación completada
+@enduml

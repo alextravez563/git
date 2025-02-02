@@ -1,0 +1,53 @@
+@startuml
+!define RECTANGLE class
+
+skinparam defaultTextAlignment center
+skinparam classBackgroundColor #F0F8FF
+skinparam classBorderColor #000080
+skinparam classArrowColor #000080
+skinparam actorBackgroundColor #FFD700
+skinparam actorBorderColor #000000
+skinparam usecaseBackgroundColor #E6E6FA
+skinparam usecaseBorderColor #000080
+
+actor "Usuario" as Usuario <<(U,#FFD700)>>
+
+rectangle "Sistema de Alquiler de Vehículos" {
+    (Registrar Cliente) as (UC1) <<(C,#E6E6FA)>>
+    (Agregar Vehículo) as (UC2) <<(C,#E6E6FA)>>
+    (Realizar Reserva) as (UC3) <<(C,#E6E6FA)>>
+    (Modificar Reserva) as (UC4) <<(C,#E6E6FA)>>
+    (Cancelar Reserva) as (UC5) <<(C,#E6E6FA)>>
+    (Mostrar Clientes) as (UC6) <<(C,#E6E6FA)>>
+    (Mostrar Vehículos) as (UC7) <<(C,#E6E6FA)>>
+    (Mostrar Reservas) as (UC8) <<(C,#E6E6FA)>>
+}
+
+Usuario --> UC1 : "1. Registrar Cliente"
+Usuario --> UC2 : "2. Agregar Vehículo"
+Usuario --> UC3 : "3. Realizar Reserva"
+Usuario --> UC4 : "4. Modificar Reserva"
+Usuario --> UC5 : "5. Cancelar Reserva"
+Usuario --> UC6 : "6. Mostrar Clientes"
+Usuario --> UC7 : "7. Mostrar Vehículos"
+Usuario --> UC8 : "8. Mostrar Reservas"
+
+note right of UC1
+  <b>Registrar Cliente</b>:
+  Permite registrar un nuevo cliente
+  en el sistema.
+end note
+
+note left of UC3
+  <b>Realizar Reserva</b>:
+  Permite a un cliente reservar
+  un vehículo disponible.
+end note
+
+note right of UC5
+  <b>Cancelar Reserva</b>:
+  Permite cancelar una reserva
+  existente.
+end note
+
+@enduml

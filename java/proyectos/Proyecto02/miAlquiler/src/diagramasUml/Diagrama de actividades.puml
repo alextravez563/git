@@ -1,0 +1,29 @@
+@startuml
+!define RECTANGLE component
+
+skinparam defaultTextAlignment center
+skinparam componentBackgroundColor #E6E6FA
+skinparam componentBorderColor #000080
+skinparam componentFontColor #000000
+skinparam arrowColor #000080
+
+package "Sistema de Alquiler" {
+    component "AgenciaAlquiler" as Agencia <<(C,#FFD700)>>
+    component "Cliente" as Cliente <<(C,#E6E6FA)>>
+    component "Vehiculo" as Vehiculo <<(C,#E6E6FA)>>
+    component "Reserva" as Reserva <<(C,#E6E6FA)>>
+    component "Serializador" as Serializador <<(C,#E6E6FA)>>
+}
+
+Agencia --> Cliente : "gestiona"
+Agencia --> Vehiculo : "gestiona"
+Agencia --> Reserva : "gestiona"
+Agencia --> Serializador : "usa"
+
+note right of Agencia
+  <b>AgenciaAlquiler</b>:
+  Componente principal que
+  gestiona el sistema.
+end note
+
+@enduml
