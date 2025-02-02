@@ -2,7 +2,7 @@
 //Proyecto2-Mialquiler
  // Nombre: Alex Travez , Mateo Oviedo
  // Fecha de realizacion:2/01/2025
- // Fecha de entrega: 31/01/2025
+ // Fecha de entrega: 3/01/2025
 
  */
 
@@ -278,6 +278,6 @@ public class Main {
     BIBLIOGRAFIA :
    1-  •	Bloch, J. (2017). Effective Java. Addison-Wesley.
    2-  •	PlantUML. (2023). PlantUML Documentation. Recuper- ado de https://plantuml.com/
-   3- Analisis y clases de diseño, Lenguaje UML (Material de clase, presentado por David Mejia)[Consultado: 1-January-2025].
+   3- Analisis y clases de diseño, Lenguaje UML (Material de clase, presentado por David Mejia)[Consultado: 1-February-2025].
 
     */
